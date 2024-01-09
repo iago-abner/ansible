@@ -1,0 +1,8 @@
+---
+- name: Register a file content as a variable
+  shell: pwd
+  register: result
+
+- name: Print the transformed variable
+  debug:
+    msg: '{{ result.stdout }}'

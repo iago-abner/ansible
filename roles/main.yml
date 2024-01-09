@@ -1,0 +1,9 @@
+# - hosts: app
+#   become: yes
+#   roles:
+#     - install_git
+    # - install_docker
+
+- hosts: app
+  roles:
+    - config-sshkey
